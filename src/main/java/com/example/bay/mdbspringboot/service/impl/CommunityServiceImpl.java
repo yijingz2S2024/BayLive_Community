@@ -116,11 +116,11 @@ public class CommunityServiceImpl implements CommunityService {
         messageService.removeAllMessagesFromCommunity(communityId);
     }
 
-//    @Override
-//    public List<Community> getCurrentUserCommunities() {
-//        List<>
-//        return null;
-//    }
+    @Override
+    public List<Community> getCurrentUserCommunities() {
+        List<CommunityUserRole> communityUserRoles = communityUserRoleService.getAllByUserId(CURRENT_USER_ID);
+        return null;
+    }
 
 
 }
